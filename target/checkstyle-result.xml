@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.5">
+<file name="/Users/danieloh/cloud-native-app-dev/eap/eap73-mp-demo/src/main/java/com/redhat/eap/microprofile/MyHelloService.java">
+</file>
+<file name="/Users/danieloh/cloud-native-app-dev/eap/eap73-mp-demo/src/main/java/com/redhat/eap/microprofile/MyHelloWorld.java">
+</file>
+<file name="/Users/danieloh/cloud-native-app-dev/eap/eap73-mp-demo/src/main/java/com/redhat/eap/microprofile/MyJAXActivator.java">
+</file>
+</checkstyle>
