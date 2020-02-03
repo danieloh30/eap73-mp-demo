@@ -9,7 +9,6 @@ import org.eclipse.microprofile.metrics.annotation.Counted;
 import org.eclipse.microprofile.metrics.annotation.Timed;
 import org.eclipse.microprofile.opentracing.Traced;
 
-@Traced
 @Path("/")
 public class MyHelloWorld {
 
@@ -19,15 +18,16 @@ public class MyHelloWorld {
     @GET
     @Path("/json")
     @Produces({ "application/json" })
+    @Traced
     @Timed
     public String getHelloWorldJSON() {
         return "{\"result\":\"" + myHelloService.createHelloMessage("JBoss EAP 7.3 with MicroProfile") + "\"}";
     }
 
-    @Traced(false)
     @GET
     @Path("/xml")
     @Produces({ "application/xml" })
+    @Traced(false)
     @Counted
     public String getHelloWorldXML() {
         return "<xml><result>" + myHelloService.createHelloMessage("JBoss EAP 7.3 with MicroProfile") + "</result></xml>";
